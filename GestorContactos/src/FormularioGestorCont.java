@@ -32,7 +32,8 @@ public class FormularioGestorCont {
                     tableModel.addRow(new String[]{nombre, email});
                     txtFNombre.setText("");
                     txtFieldEmail.setText("");
-                }
+                }else
+                    JOptionPane.showMessageDialog(panel1,"Introduzca los datos necesarios");
             }
         });
 
@@ -42,7 +43,8 @@ public class FormularioGestorCont {
                 int selectRow = table1.getSelectedRow();
                 if(selectRow != -1){
                     tableModel.removeRow(selectRow);
-                }
+                }else
+                    JOptionPane.showMessageDialog(panel1,"No ha seleccionado ningún contacto");
             }
         });
 
@@ -53,12 +55,16 @@ public class FormularioGestorCont {
                 String nombre = txtFNombre.getText();
                 String email = txtFieldEmail.getText();
 
-                if(selectRow != -1 && !nombre.isEmpty() && !email.isEmpty()){
-                    tableModel.removeRow(selectRow);
-                    tableModel.addRow(new String[]{nombre, email});
+                if(selectRow != -1){
+                    if(!nombre.isEmpty())
+                        tableModel.setValueAt(nombre,selectRow,0);
+                    if(!email.isEmpty())
+                        tableModel.setValueAt(email,selectRow,1);
+
                     txtFNombre.setText("");
                     txtFieldEmail.setText("");
-                }
+                }else
+                    JOptionPane.showMessageDialog(panel1,"No ha seleccionado ningún contacto");
             }
         });
     }
