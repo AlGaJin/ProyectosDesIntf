@@ -2,7 +2,7 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Ejemplo de JFileChooser y JMenuBar");
+        JFrame frame = new JFrame("Configuración de preferencias");
         frame.getContentPane().add(new FormConfgPref(frame).getPanel());
         frame.setSize(350,350);
 
