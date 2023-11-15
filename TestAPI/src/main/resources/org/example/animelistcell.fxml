@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.AnimeListCellController">
+   <children>
+      <Label fx:id="tituloLabel" text="Label">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="sinopsisLabel" maxWidth="450.0" text="Label" textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS" />
+      <HBox alignment="CENTER">
+         <children>
+            <Label fx:id="fechaLabel" text="Label" textFill="#00000099">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="8.0" />
+               </HBox.margin></Label>
+            <Label fx:id="ageRatingLabel" text="Label">
+               <HBox.margin>
+                  <Insets right="8.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="totalEpisodiosLabel" layoutX="10.0" layoutY="10.0" text="Label">
+               <HBox.margin>
+                  <Insets right="8.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="showTypeLabel" layoutX="10.0" layoutY="10.0" text="Label">
+               <HBox.margin>
+                  <Insets right="8.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fx:id="portadaView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin></ImageView>
+   </children>
+</VBox>
