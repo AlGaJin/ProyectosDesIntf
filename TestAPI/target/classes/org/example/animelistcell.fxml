@@ -13,7 +13,10 @@
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Label fx:id="sinopsisLabel" maxWidth="450.0" text="Label" textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS" />
+      <Label fx:id="sinopsisLabel" maxWidth="450.0" text="Label" textAlignment="JUSTIFY" wrapText="true" VBox.vgrow="ALWAYS">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
       <HBox alignment="CENTER">
          <children>
             <Label fx:id="fechaLabel" text="Label" textFill="#00000099">
@@ -23,7 +26,7 @@
                <HBox.margin>
                   <Insets right="8.0" />
                </HBox.margin></Label>
-            <Label fx:id="ageRatingLabel" text="Label">
+            <Label fx:id="ageRatingLabel" text="Label" textFill="#f20000">
                <HBox.margin>
                   <Insets right="8.0" />
                </HBox.margin>
